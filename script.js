@@ -22,3 +22,4 @@ readMoreBtn.addEventListener("click", () => {
         readMoreBtn.textContent = "Show more";
     }
 });
+

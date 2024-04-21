@@ -7,13 +7,12 @@
         <link rel="stylesheet" href="style.css" />
 
         <link rel="stylesheet" href="./css/styles.css" />
+        <!--google icons reference location to get directory-->
         <link
-            rel="icon"
-            href="./assets/icons/favicon-black.ico"
-            type="image/x-icon"
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
         <!--font awesome reference location to get directory-->
-
         <script
             src="https://kit.fontawesome.com/459639fb9c.js"
             crossorigin="anonymous"
@@ -25,7 +24,7 @@
         <title>New United Kingdom Party</title>
     </head>
     <body>
-        <section class="header">
+        <section class="sub-header">
             <nav>
                 <a href="index.html"
                     ><img
@@ -36,116 +35,68 @@
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="manifesto.html">Manifesto</a>
-                        </li>
+                        <li><a href="manifesto.html">Manifesto</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
-            <div class="text-box">
-                <h1>Welcome to the New United Kingdom Party (NUKP)</h1>
-                <p>
-                    For a Better Tomorrow <br />
-                    For all
-                </p>
-                <a href="about.html" class="hero-btn">Visit Us To Know More</a>
+            <h1>Contact Us</h1>
+        </section>
+        <!--Contact Us content-->
+        <section class="contact-us">
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Replace with Access Key -->
+                    <input
+                        type="hidden"
+                        name="access_key"
+                        value="1e90309d-f8b5-4109-b1fe-b13410cccb04"
+                    />
+                    <label>
+                        Name:
+                        <inputww
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            required
+                        />
+                    </label>
+                    <label>
+                        Email:
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                        />
+                    </label>
+                    <label>
+                        Subject:
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Subject"
+                            required
+                        />
+                    </label>
+                    <label>
+                        Send message:
+                        <textarea
+                            name="message"
+                            rows="10"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                    </label>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <button type="submit" class="hero-btn red-btn donate-btn">
+                        Send
+                    </button>
+                </form>
             </div>
         </section>
-        <!--About Us-->
-
-        <section class="about-us">
-            <h2>About Us</h2>
-            <p>
-                At NUKP, we believe in creating a brighter, better, healthier
-                future for all citizens of the United Kingdom. We are a new
-                political party founded on the principles of national progress
-                and respect and justice for all citizens, through building a
-                stronger, fairer, more just and prosperous nation, where
-                everyone can feel the benefits and improvement to their own
-                quality of life.
-            </p>
-        </section>
-        <!--Manifesto-->
-        <section class="manifesto">
-            <h1>Our Manifesto</h1>
-            <p>
-                
-            </p>
-            <div class="row">
-                <div class="manifesto-col">
-                    <img
-                        src="./assets/images/healthcare.jpg"
-                        alt="healthcare"
-                    />
-                    <div class="layer">
-                        <h3>Healthcare</h3>
-                    </div>
-                </div>
-                <div class="manifesto-col">
-                    <img
-                        src="./assets/images/food-crisis.jpg"
-                        alt="Addressing Rising Food Prices"
-                    />
-                    <div class="layer">
-                        <h3>Addressing rising food prices</h3>
-                    </div>
-                </div>
-                <div class="manifesto-col">
-                    <img
-                        src="./assets/images/transport.jpg"
-                        alt="Public Transport"
-                    />
-                    <div class="layer">
-                        <h3>Public Transport</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="manifesto-col">
-                    <img
-                        src="./assets/images/cost-of-living.jpg"
-                        alt="Cost of Living Crisis"
-                    />
-                    <div class="layer">
-                        <h3>Cost of Living Crisis</h3>
-                    </div>
-                </div>
-                <div class="manifesto-col">
-                    <img
-                        src="./assets/images/energy-prices.jpg"
-                        alt="Energy Prices"
-                    />
-                    <div class="layer">
-                        <h3>Energy Prices</h3>
-                    </div>
-                </div>
-                <div class="manifesto-col col">
-                    <img src="./assets/images/education.jpg" alt="Education" />
-                    <div class="layer">
-                        <h3>Education</h3>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="manifesto-col">
-                    <img src="./assets/images/housing.jpg" alt="Education" />
-                    <div class="layer">
-                        <h3>Housing</h3>
-                    </div>
-                </div>
-            </div>
-                
-            </div>
-        </section>
-        <!--Contact-->
-        <div class="contact">
-            <h1>Get in touch</h1>
-            <a class="hero-btn" href="contact.html">CONTACT US</a>
-        </div>
-
         <footer>
             <div class="container">
                 <div class="footer-img">
@@ -158,7 +109,6 @@
                         ><h3>The New United Kingdom Party</h3></a
                     >
                 </div>
-
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="manifesto.html">Manifesto</a></li>
@@ -190,7 +140,10 @@
                 <p>Image Credits:</p>
                 <span
                     >Healthcare picture:
-                    <a href="https://www.freepik.com/free-photo/patient-doctor-walking-together-medium-shot_33752770.htm#fromView=search&page=1&position=4&uuid=bf304090-b3bc-4d68-8cee-7cf47148ffe3">Image by freepik</a></span
+                    <a
+                        href="https://www.freepik.com/free-photo/patient-doctor-walking-together-medium-shot_33752770.htm#fromView=search&page=1&position=4&uuid=bf304090-b3bc-4d68-8cee-7cf47148ffe3"
+                        >Image by freepik</a
+                    ></span
                 >
                 <span
                     >Public Transport picture: Image by
@@ -222,6 +175,13 @@
                     ></span
                 >
                 <span
+                    >Housing picture: Image by
+                    <a
+                        href="https://www.freepik.com/free-photo/housing-mansion-residentail-dwelling-architecture_2971805.htm#fromView=search&page=1&position=6&uuid=7f23405f-e152-4adf-9ce7-622d5f846d2c"
+                        >Image by rawpixel.com on Freepik</a
+                    ></span
+                >
+                <span
                     >Education picture:
                     <a
                         href="https://www.freepik.com/free-photo/female-speaker-giving-presentation-hall-university-workshop-audience-conference-hall_12726939.htm#fromView=search&page=2&position=16&uuid=c9c8b8fb-88cd-4ee6-ba41-e7e01011be6a"
@@ -235,10 +195,6 @@
                         href="https://www.freepik.com/free-photo/census-concept-photographed-urban-composition_15035144.htm#fromView=search&page=1&position=40&uuid=605b1b25-9d38-4df4-b233-ba32c5a9133d"
                         >Freepik</a
                     ></span
-                >
-                <span
-                    >Housing picture: Image by
-                    <a href="https://www.freepik.com/free-photo/housing-mansion-residentail-dwelling-architecture_2971805.htm#fromView=search&page=1&position=6&uuid=7f23405f-e152-4adf-9ce7-622d5f846d2c">Image by rawpixel.com on Freepik</a></span
                 >
                 <span
                     >Get Involved picture: Image by
@@ -263,6 +219,12 @@
                 >
             </div>
         </footer>
+        <!-- Required for hCaptcha -->
+        <script
+            src="https://web3forms.com/client/script.js"
+            async
+            defer
+        ></script>
         <script src="script.js"></script>
     </body>
 </html>
